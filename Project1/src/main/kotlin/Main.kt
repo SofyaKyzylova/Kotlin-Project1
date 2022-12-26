@@ -34,6 +34,7 @@ fun main() {
     //ЗАДАНИЕ 3
     val myString = readlnOrNull()
     println("Введенная строка: $myString")
+    //val n : Int = myString.length()
     //println("Длина строки =  ${myString.length}")
     //println("Третий символ строки = ${myString.charAt(3)}")
     //myString.equals(str)
