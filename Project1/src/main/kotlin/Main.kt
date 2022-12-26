@@ -44,5 +44,4 @@ fun main() {
     //val containsP = myString.contains("hi")
     //val newString : String = myString.concat(" . The end");
     //val newString : String = myString.replace('i', 'a');
-
 }
