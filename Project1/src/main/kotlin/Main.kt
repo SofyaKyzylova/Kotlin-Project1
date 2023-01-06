@@ -1,31 +1,31 @@
 fun main() {
     //ЗАДАНИЕ 1
     println("Здравствуйте!")
-    var name = "Кызылова Софья Андреевна"
-    var spec = "Информатика и вычислительная техника"
+    val name = "Кызылова Софья Андреевна"
+    val spec = "Информатика и вычислительная техника"
     println("Меня зовут $name, я учусь на 3 курсе в Тюменском индустриальном университете на специальности $spec \n")
 
     
     //ЗАДАНИЕ 2
-    var a : Int = 100
+    val a : Int = 100
     println("Переменная $a имеет тип ${a::class.java.typeName}")
 
-    var pi : Double = 3.14
+    val pi : Double = 3.14
     println("Переменная $pi имеет тип ${pi::class.java.typeName}")
 
-    var flag : Boolean = true
+    val flag : Boolean = true
     println("Переменная $flag имеет  ${flag::class.java.typeName}")
 
-    var myChar : Char = 'a'
+    val myChar : Char = 'a'
     println("Переменная $myChar имеет тип ${myChar::class.java.typeName}")
 
-    val str : String = "abcdefg"
+    var str : String = "abcdefg"
     println("Переменная $str имеет тип ${str::class.java.typeName}")
 
-    var bt : Byte = 64
+    val bt : Byte = 64
     println("Переменная $bt имеет тип ${bt::class.java.typeName}")
 
-    var arr = IntArray(5) { it + 1 }
+    val arr = IntArray(5) { it + 1 }
     println("Массив переменных типа Int:")
     arr.forEach { println(it) }
     println("\n")
@@ -33,7 +33,7 @@ fun main() {
     
     //ЗАДАНИЕ 3
     println("Введите строку: ")
-    val myString = readlnOrNull()
+    var myString = readlnOrNull()
     println("Введенная строка: $myString \n")
 
     if(myString!!.isEmpty())
@@ -62,7 +62,7 @@ fun main() {
         else println("myString НЕ содержит подстроку hi \n")
 
         val addString = "... The end";
-        val sb = StringBuilder()
+        var sb = StringBuilder()
         sb.append(myString).append(addString)
         val newString = sb.toString()
         println("Новая строка: $newString \n")
