@@ -46,7 +46,7 @@ fun main() {
         println("${myString!!.lowercase()} \n")
 
         println("Длина строки =  ${myString!!.length} \n")
-        //println("Третий символ строки = ${myString!!.get(2)} \n")
+        println("Третий символ строки = ${myString[2]} \n")
 
         var startsWith : Boolean = myString.startsWith("A")
         if(startsWith) println("Введенная строка начинается с символа А")
